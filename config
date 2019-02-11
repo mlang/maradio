@@ -1,0 +1,3 @@
+{ mpvOptions = ["-no-video", "-quiet"]
+, stations = https://mlang.github.io/maradio/stations
+}

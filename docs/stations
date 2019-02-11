@@ -1,0 +1,15 @@
+[ { name = "Antenne Steiermark", url = "http://livestream.antenne.at:80" }
+, { name = "Arabella Wien", url = "http://arabella.stream.kapper.net:8000/arabellavie" }
+, { name = "Energy Wien", url = "http://stream1.energy.at:8000/vie" }
+, { name = "FM4", url = "http://mp3stream1.apasf.apa.at:8000/?type=http" }
+, { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
+, { name = "Ö1", url = "http://185.85.29.142:8000/?type=http" }
+, { name = "Ö3", url = "http://mp3stream7.apasf.apa.at:8000/?type=http" }
+, { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
+, { name = "Ozora Trance", url = "http://stream.radiozora.fm/trance_a" }
+, { name = "Radio Burgenland", url = "http://194.232.200.146:8000" }
+, { name = "Radio Niederösterreich", url = "http://mp3stream8.apasf.apa.at/?type=http" }
+, { name = "Radio Steiermark", url = "http://mp3stream9.apasf.apa.at/?type=http" }
+, { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
+, { name = "Superfly", url = "http://stream01.superfly.fm:8080/live128?.mp3" }
+]

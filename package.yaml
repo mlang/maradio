@@ -1,0 +1,23 @@
+name:                maradio
+version:             0.1.0.0
+github:              "mlang/maradio"
+license:             BSD3
+author:              "Mario Lang"
+maintainer:          "mlang@blind.guru"
+copyright:           "2019 Mario Lang"
+
+description:         A simple command-line program to listen to streaming radio
+
+dependencies:
+- base >= 4.12 && < 5
+- dhall
+- directory
+- extra
+- optparse-applicative
+- process
+- xdg-basedir
+
+executables:
+  maradio:
+    main:                Main.hs
+    source-dirs:         app
