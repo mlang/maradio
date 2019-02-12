@@ -26,8 +26,10 @@ data Station = Station {
 instance Interpret Station
 
 args :: Config -> Parser Options
-args Config { .. } =
-  Options <$> optional (strOption (long "duration"))
+args Config {..} =
+  Options <$> optional (strOption (  long "duration"
+                                  <> metavar "[[hh:]mm:]ss"
+                                  <> help "Only play for specified duration"))
           <*> (subparser . mconcat . map \s@Station {..} -> command name $ info (pure s) mempty) stations
 
 data Options = Options {
