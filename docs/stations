@@ -3,7 +3,7 @@
 , { name = "Energy Wien", url = "http://stream1.energy.at:8000/vie" }
 , { name = "FM4", url = "http://mp3stream1.apasf.apa.at:8000/?type=http" }
 , { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
-, { name = "Lounge.fm", url = "http://austria.lounge.fm/" }
+, { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
 , { name = "Lounge.fm Austria", url = "http://austria.lounge.fm/" }
 , { name = "Lounge.fm UKW Wien", url = "http://wien.lounge.fm/" }
 , { name = "Ö1", url = "http://185.85.29.142:8000/?type=http" }
