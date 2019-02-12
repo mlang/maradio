@@ -1,10 +1,11 @@
 {-# LANGUAGE BlockArguments, DeriveGeneric, OverloadedStrings, RecordWildCards #-}
 module Main where
 
+import Control.Applicative (optional)
 import Control.Exception (onException)
 import Control.Monad (void)
 import Control.Monad.Extra (ifM)
-import Dhall
+import Dhall hiding (maybe)
 import Options.Applicative hiding (auto)
 import System.Directory (doesFileExist)
 import System.Environment.XDG.BaseDir
@@ -15,29 +16,36 @@ type URL = String
 data Config = Config {
   mpvOptions :: [String]
 , stations :: [Station]
-} deriving (Generic, Show)
+} deriving (Eq, Generic, Show)
 instance Interpret Config
 
 data Station = Station {
   name :: String
 , url :: URL
-} deriving (Generic, Show)
+} deriving (Eq, Generic, Show)
 instance Interpret Station
 
-station :: [Station] -> Parser Station
-station = subparser . mconcat . map \s@Station {..} ->
-  command name $ info (pure s) mempty
+args :: Config -> Parser Options
+args Config { .. } =
+  Options <$> optional (strOption (long "duration"))
+          <*> (subparser . mconcat . map \s@Station {..} -> command name $ info (pure s) mempty) stations
+
+data Options = Options {
+  duration :: Maybe String
+, station :: Station
+} deriving (Eq, Show)
 
 main :: IO ()
 main = do
   cfg <- getConfig
-  Station {..} <- execParser (opts cfg)
-  play cfg url
+  play cfg =<< execParser (opts cfg)
 
-opts cfg = info (station (stations cfg) <**> helper) $ mempty
+opts cfg = info (args cfg <**> helper) $ mempty
 
-play :: Config -> URL -> IO ()
-play Config{..} url = void $ rawSystem "mpv" (mpvOptions <> [url])
+play :: Config -> Options -> IO ()
+play Config{..} Options{..} = void $
+  rawSystem "mpv" $
+  mpvOptions <> maybe [] (\d -> ["--length="<>d]) duration <> [url station]
 
 defaultConfig :: IO Config
 defaultConfig = do
