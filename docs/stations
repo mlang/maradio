@@ -5,7 +5,7 @@
 , { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
 , { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
 , { name = "Lounge.fm Austria", url = "http://austria.lounge.fm/" }
-, { name = "Lounge.fm UKW Wien", url = "http://wien.lounge.fm/" }
+, { name = "Lounge.fm Wien", url = "http://wien.lounge.fm/" }
 , { name = "Ö1", url = "http://185.85.29.142:8000/?type=http" }
 , { name = "Ö3", url = "http://mp3stream7.apasf.apa.at:8000/?type=http" }
 , { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
@@ -13,6 +13,7 @@
 , { name = "Radio Burgenland", url = "http://194.232.200.146:8000" }
 , { name = "Radio Niederösterreich", url = "http://mp3stream8.apasf.apa.at/?type=http" }
 , { name = "Radio Steiermark", url = "http://mp3stream9.apasf.apa.at/?type=http" }
+, { name = "Swiss Classic", url = "http://stream.srg-ssr.ch/m/rsc_de/mp3_128" }
 , { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
 , { name = "Superfly", url = "http://stream01.superfly.fm:8080/live128?.mp3" }
 ]
