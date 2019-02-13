@@ -1,7 +1,14 @@
+let oe2 = \(name : Text) -> \(code : Text) ->
+          { name = "Radio " ++ name
+          , url = "http://oe2" ++ code ++ "shoutcast.sf.apa.at:8000/?type=http"
+          } in
 [ { name = "Antenne Steiermark", url = "http://livestream.antenne.at:80" }
 , { name = "Arabella Wien", url = "http://arabella.stream.kapper.net:8000/arabellavie" }
 , { name = "Energy Wien", url = "http://stream1.energy.at:8000/vie" }
 , { name = "FM4", url = "http://mp3stream1.apasf.apa.at:8000/?type=http" }
+, { name = "Freies Radio Freistadt", url = "https://develop.servus.at:8443/frf" }
+, { name = "Freies Radio Innsbruck", url = "http://stream.freirad.at:8002/live.mp3" }
+, { name = "Freies Radio Salzkammergut", url = "http://stream.xaok.org:8000/frs.mp3" }
 , { name = "Helsinki", url = "https://live.helsinki.at:8088/live160.ogg" }
 , { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
 , { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
@@ -11,12 +18,19 @@
 , { name = "Ö3", url = "http://mp3stream7.apasf.apa.at:8000/?type=http" }
 , { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
 , { name = "Ozora Trance", url = "http://stream.radiozora.fm/trance_a" }
-, { name = "Radio Burgenland", url = "http://194.232.200.146:8000" }
-, { name = "Radio Niederösterreich", url = "http://mp3stream8.apasf.apa.at/?type=http" }
-, { name = "Radio Steiermark", url = "http://mp3stream9.apasf.apa.at/?type=http" }
+, { name = "Proton", url = "http://radioproton.at:8000/proton" }
+, oe2 "Burgenland" "b"
+, oe2 "Kärnten" "k"
+, oe2 "Niederösterreich" "n"
+, oe2 "Oberösterreich" "o"
+, oe2 "Salzburg" "s"
+, oe2 "Steiermark" "st"
+, oe2 "Tirol" "t"
+, oe2 "Vorarlberg" "v"
+, oe2 "Wien" "w"
 , { name = "SRF 2 Kultur", url = "http://stream.srg-ssr.ch/m/drs2/mp3_128" }
 , { name = "Swiss Classic", url = "http://stream.srg-ssr.ch/m/rsc_de/mp3_128" }
 , { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
 , { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
-, { name = "Superfly", url = "http://stream01.superfly.fm:8080/live128?.mp3" }
+, { name = "Superfly", url = "http://stream01.superfly.fm/live128" }
 ]
