@@ -34,4 +34,8 @@ let oe2 = \(name : Text) -> \(code : Text) ->
 , { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
 , { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
 , { name = "Superfly", url = "http://stream01.superfly.fm/live128" }
+, { name = "Welle 1 Graz", url = "http://live.welle1.at:9128/" }
+, { name = "Welle 1 Linz", url = "http://live.welle1.at:7128/" }
+, { name = "Welle 1 Salzburg", url = "http://live.welle1.at:8128/" }
+, { name = "Welle 1 Wels/Steyr/Kremsmünster/Kirchdorf", url = "http://live.welle1.at:6128/" }
 ]
