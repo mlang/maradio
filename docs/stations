@@ -1,11 +1,11 @@
-let oe2 = \(name : Text) -> \(code : Text) ->
-          { name = "Radio " ++ name
-          , url = "http://oe2" ++ code ++ "shoutcast.sf.apa.at:8000/?type=http"
+let orf = \(name : Text) -> \(code : Text) ->
+          { name = name
+          , url = "http://" ++ code ++ "shoutcast.sf.apa.at:8000/?type=http"
           } in
 [ { name = "Antenne Steiermark", url = "http://livestream.antenne.at:80" }
 , { name = "Arabella Wien", url = "http://arabella.stream.kapper.net:8000/arabellavie" }
 , { name = "Energy Wien", url = "http://stream1.energy.at:8000/vie" }
-, { name = "FM4", url = "http://mp3stream1.apasf.apa.at:8000/?type=http" }
+, orf "FM4" "fm4"
 , { name = "Freies Radio Freistadt", url = "https://develop.servus.at:8443/frf" }
 , { name = "Freies Radio Innsbruck", url = "http://stream.freirad.at:8002/live.mp3" }
 , { name = "Freies Radio Salzkammergut", url = "http://stream.xaok.org:8000/frs.mp3" }
@@ -14,21 +14,21 @@ let oe2 = \(name : Text) -> \(code : Text) ->
 , { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
 , { name = "Lounge.fm Austria", url = "http://austria.lounge.fm/" }
 , { name = "Lounge.fm Wien", url = "http://wien.lounge.fm/" }
-, { name = "Ö1", url = "http://mp3stream3.apasf.apa.at:8000/?type=http" }
-, { name = "Ö3", url = "http://mp3stream7.apasf.apa.at:8000/?type=http" }
+, orf "Ö1" "oe1"
+, orf "Ö3" "oe3"
 , { name = "Orange", url = "http://streams.tantemalkah.at:8000/live.mp3" }
 , { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
 , { name = "Ozora Trance", url = "http://stream.radiozora.fm/trance_a" }
 , { name = "Proton", url = "http://radioproton.at:8000/proton" }
-, oe2 "Burgenland" "b"
-, oe2 "Kärnten" "k"
-, oe2 "Niederösterreich" "n"
-, oe2 "Oberösterreich" "o"
-, oe2 "Salzburg" "s"
-, oe2 "Steiermark" "st"
-, oe2 "Tirol" "t"
-, oe2 "Vorarlberg" "v"
-, oe2 "Wien" "w"
+, orf "Radio Burgenland" "oe2b"
+, orf "Radio Kärnten" "oe2k"
+, orf "Radio Niederösterreich" "oe2n"
+, orf "Radio Oberösterreich" "oe2o"
+, orf "Radio Salzburg" "oe2s"
+, orf "Radio Steiermark" "oe2st"
+, orf "Radio Tirol" "oe2t"
+, orf "Radio Vorarlberg" "oe2v"
+, orf "Radio Wien" "oe2w"
 , { name = "SRF 2 Kultur", url = "http://stream.srg-ssr.ch/m/drs2/mp3_128" }
 , { name = "Swiss Classic", url = "http://stream.srg-ssr.ch/m/rsc_de/mp3_128" }
 , { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
