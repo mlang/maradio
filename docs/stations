@@ -14,7 +14,9 @@
 , { name = "Radio Burgenland", url = "http://194.232.200.146:8000" }
 , { name = "Radio Niederösterreich", url = "http://mp3stream8.apasf.apa.at/?type=http" }
 , { name = "Radio Steiermark", url = "http://mp3stream9.apasf.apa.at/?type=http" }
+, { name = "SRF 2 Kultur", url = "http://stream.srg-ssr.ch/m/drs2/mp3_128" }
 , { name = "Swiss Classic", url = "http://stream.srg-ssr.ch/m/rsc_de/mp3_128" }
+, { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
 , { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
 , { name = "Superfly", url = "http://stream01.superfly.fm:8080/live128?.mp3" }
 ]
