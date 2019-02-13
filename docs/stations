@@ -6,7 +6,7 @@
 , { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
 , { name = "Lounge.fm Austria", url = "http://austria.lounge.fm/" }
 , { name = "Lounge.fm Wien", url = "http://wien.lounge.fm/" }
-, { name = "Ö1", url = "http://185.85.29.142:8000/?type=http" }
+, { name = "Ö1", url = "http://mp3stream3.apasf.apa.at:8000/?type=http" }
 , { name = "Ö3", url = "http://mp3stream7.apasf.apa.at:8000/?type=http" }
 , { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
 , { name = "Ozora Trance", url = "http://stream.radiozora.fm/trance_a" }
