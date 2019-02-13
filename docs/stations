@@ -2,6 +2,7 @@
 , { name = "Arabella Wien", url = "http://arabella.stream.kapper.net:8000/arabellavie" }
 , { name = "Energy Wien", url = "http://stream1.energy.at:8000/vie" }
 , { name = "FM4", url = "http://mp3stream1.apasf.apa.at:8000/?type=http" }
+, { name = "Helsinki", url = "https://live.helsinki.at:8088/live160.ogg" }
 , { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
 , { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
 , { name = "Lounge.fm Austria", url = "http://austria.lounge.fm/" }
