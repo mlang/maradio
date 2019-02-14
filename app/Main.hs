@@ -58,6 +58,7 @@ getConfig :: IO Config
 getConfig = do
   configFile <- getUserConfigFile "maradio" "config"
   ifM (doesFileExist configFile) (inputFile auto configFile) do
-    let mpvOptions = ["-no-video", "-quiet"]
+    statusMsg <- input auto "https://mlang.github.io/maradio/mpv-term-status-msg"
+    let mpvOptions = ["-no-video", "-quiet", statusMsg]
     stations <- input auto "https://mlang.github.io/maradio/stations"
     pure $ Config{..}
