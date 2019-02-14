@@ -8,7 +8,7 @@ let orf = \(name : Text) -> \(code : Text) ->
 , orf "FM4" "fm4"
 , { name = "Freies Radio Freistadt", url = "https://develop.servus.at:8443/frf" }
 , { name = "Freies Radio Innsbruck", url = "http://stream.freirad.at:8002/live.mp3" }
-, { name = "Freies Radio Salzkammergut", url = "http://stream.xaok.org:8000/frs.mp3" }
+, { name = "Freies Radio Salzkammergut", url = "http://stream.xaok.org:8000/frs-high.ogg" }
 , { name = "Helsinki", url = "https://live.helsinki.at:8088/live160.ogg" }
 , { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
 , { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
