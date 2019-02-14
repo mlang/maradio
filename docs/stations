@@ -2,24 +2,27 @@ let orf = \(name : Text) -> \(code : Text) ->
           { name = name
           , url = "http://" ++ code ++ "shoutcast.sf.apa.at:8000/?type=http"
           } in
-[ { name = "Antenne Steiermark", url = "http://livestream.antenne.at:80" }
-, { name = "Arabella Wien", url = "http://arabella.stream.kapper.net:8000/arabellavie" }
-, { name = "Energy Wien", url = "http://stream1.energy.at:8000/HQ" }
+[ orf "Ö1" "oe1"
 , orf "FM4" "fm4"
+, { name = "Orange", url = "http://streams.tantemalkah.at:8000/live.mp3" }
+, { name = "Freies Radio Salzkammergut", url = "http://stream.xaok.org:8000/frs-high.ogg" }
 , { name = "Freies Radio Freistadt", url = "https://develop.servus.at:8443/frf" }
 , { name = "Freies Radio Innsbruck", url = "http://stream.freirad.at:8002/live.ogg" }
-, { name = "Freies Radio Salzkammergut", url = "http://stream.xaok.org:8000/frs-high.ogg" }
 , { name = "Helsinki", url = "https://live.helsinki.at:8088/live160.ogg" }
-, { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
+, { name = "Proton", url = "http://radioproton.at:8000/proton" }
+, { name = "SRF 2 Kultur", url = "http://stream.srg-ssr.ch/m/drs2/mp3_128" }
+, { name = "Swiss Classic", url = "http://stream.srg-ssr.ch/m/rsc_de/mp3_128" }
+, { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
+, { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
+, { name = "Ozora Trance", url = "http://stream.radiozora.fm/trance_a" }
+, { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
+, { name = "Energy Wien", url = "http://stream1.energy.at:8000/HQ" }
 , { name = "Lounge.fm", url = "http://digital.lounge.fm/" }
 , { name = "Lounge.fm Austria", url = "http://austria.lounge.fm/" }
 , { name = "Lounge.fm Wien", url = "http://wien.lounge.fm/" }
-, orf "Ö1" "oe1"
+, { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
+, { name = "Superfly", url = "http://stream01.superfly.fm/live128" }
 , orf "Ö3" "oe3"
-, { name = "Orange", url = "http://streams.tantemalkah.at:8000/live.mp3" }
-, { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
-, { name = "Ozora Trance", url = "http://stream.radiozora.fm/trance_a" }
-, { name = "Proton", url = "http://radioproton.at:8000/proton" }
 , orf "Radio Burgenland" "oe2b"
 , orf "Radio Kärnten" "oe2k"
 , orf "Radio Niederösterreich" "oe2n"
@@ -29,13 +32,10 @@ let orf = \(name : Text) -> \(code : Text) ->
 , orf "Radio Tirol" "oe2t"
 , orf "Radio Vorarlberg" "oe2v"
 , orf "Radio Wien" "oe2w"
-, { name = "SRF 2 Kultur", url = "http://stream.srg-ssr.ch/m/drs2/mp3_128" }
-, { name = "Swiss Classic", url = "http://stream.srg-ssr.ch/m/rsc_de/mp3_128" }
-, { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
-, { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
-, { name = "Superfly", url = "http://stream01.superfly.fm/live128" }
 , { name = "Welle 1 Graz", url = "http://live.welle1.at:9128/" }
 , { name = "Welle 1 Linz", url = "http://live.welle1.at:7128/" }
 , { name = "Welle 1 Salzburg", url = "http://live.welle1.at:8128/" }
 , { name = "Welle 1 Wels/Steyr/Kremsmünster/Kirchdorf", url = "http://live.welle1.at:6128/" }
+, { name = "Antenne Steiermark", url = "http://livestream.antenne.at:80" }
+, { name = "Arabella Wien", url = "http://arabella.stream.kapper.net:8000/arabellavie" }
 ]
