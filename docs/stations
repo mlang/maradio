@@ -4,10 +4,10 @@ let orf = \(name : Text) -> \(code : Text) ->
           } in
 [ { name = "Antenne Steiermark", url = "http://livestream.antenne.at:80" }
 , { name = "Arabella Wien", url = "http://arabella.stream.kapper.net:8000/arabellavie" }
-, { name = "Energy Wien", url = "http://stream1.energy.at:8000/vie" }
+, { name = "Energy Wien", url = "http://stream1.energy.at:8000/HQ" }
 , orf "FM4" "fm4"
 , { name = "Freies Radio Freistadt", url = "https://develop.servus.at:8443/frf" }
-, { name = "Freies Radio Innsbruck", url = "http://stream.freirad.at:8002/live.mp3" }
+, { name = "Freies Radio Innsbruck", url = "http://stream.freirad.at:8002/live.ogg" }
 , { name = "Freies Radio Salzkammergut", url = "http://stream.xaok.org:8000/frs-high.ogg" }
 , { name = "Helsinki", url = "https://live.helsinki.at:8088/live160.ogg" }
 , { name = "Kronehit", url = "http://raj.krone.at:80/kronehit-ultra-hd.aac" }
