@@ -1,0 +1,1 @@
+"-term-status-msg=\${?metadata/by-key/icy-name:\${?metadata/by-key/icy-name==APAITTest:Ö1}\${!metadata/by-key/icy-name==APAITTest:\${metadata/by-key/icy-name}}}\${?metadata/by-key/icy-br: (\${metadata/by-key/icy-br})}\${?metadata/by-key/icy-title: \${!metadata/by-key/icy-title==:[\${metadata/by-key/icy-title}]}}"
