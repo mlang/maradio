@@ -1,0 +1,4 @@
+"-term-status-msg=" ++
+"\${?metadata/by-key/icy-name:\${?metadata/by-key/icy-name==APAITtest:}\${!metadata/by-key/icy-name==APAITtest:\${metadata/by-key/icy-name}}}\${!metadata/by-key/icy-name:\${?filename==live160.ogg:Radio Helsinki}}" ++
+"\${?metadata/by-key/icy-br: (\${metadata/by-key/icy-br} kbps)}" ++
+"\${?metadata/by-key/icy-title:\${!metadata/by-key/icy-title==: [\${metadata/by-key/icy-title}]}}"
