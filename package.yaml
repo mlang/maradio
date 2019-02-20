@@ -10,14 +10,31 @@ description:         A simple command-line program to listen to streaming radio
 
 dependencies:
 - base >= 4.12 && < 5
+- cld2
 - dhall
 - directory
 - extra
+- gi-glib
+- gi-gst
+- haskeline
+- haskell-gi-base
+- microlens
+- mtl
 - optparse-applicative
+- pointedlist
 - process
+- stm
+- text
+- tld
+- transformers
+- vty
 - xdg-basedir
 
 executables:
   maradio:
     main:                Main.hs
     source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
