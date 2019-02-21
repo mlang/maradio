@@ -24,7 +24,7 @@ let orf = \(name : Text) -> \(code : Text) ->
 , { name = "Schizoid Dub Techno", url = "http://schizoid.in:8000/dubtechno" }
 , { name = "Schizoid Progressive", url = "http://schizoid.in:8000/prog" }
 -- PsyTrance
-, { name = "Schizoid PsyTrance", url = "http://schizoid.in:8000/chill" }
+, { name = "Schizoid PsyTrance", url = "http://schizoid.in:8000/schizoid" }
 , { name = "Psyndora PsyTrance", url = "http://cast.magicstreams.gr:9111/stream" }
 , { name = "RadiOzora Trance", url = "http://stream.radiozora.fm/trance_a" }
 -- DnB
