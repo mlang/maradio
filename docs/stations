@@ -14,12 +14,16 @@ let orf = \(name : Text) -> \(code : Text) ->
 , { name = "Swiss Classic", url = "http://stream.srg-ssr.ch/m/rsc_de/mp3_128" }
 , { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
 -- Chillout/Ambient
+, { name = "Chromanova", url = "http://176.31.123.212:8096/" }
 , { name = "RadiOzora Chill", url = "http://stream.radiozora.fm/chill_a" }
 , { name = "Psychedelik.com Ambient", url = "http://62.210.114.63:8002/stream/1/" }
 , { name = "Psyndora Chill", url = "http://cast.magicstreams.gr:9125/stream" }
 , { name = "Psyradio", url = "http://stream.psyradio.com.ua:8000/256kbps" }
 , { name = "Schizoid Chill", url = "http://schizoid.in:8000/chill" }
-, { name = "SomaFM", url = "http://ice3.somafm.com/spacestation-128-mp3" }
+, { name = "SomaFM: Beat Blender", url = "http://ice3.somafm.com/beatblender-128-mp3" }
+, { name = "SomaFM: Deep Space One", url = "http://ice3.somafm.com/deepspaceone-128-mp3" }
+, { name = "SomaFM: Groove Salad", url = "http://ice3.somafm.com/groovesalad-256-mp3" }
+, { name = "SomaFM: Space Station Soma", url = "http://ice3.somafm.com/spacestation-128-mp3" }
 , { name = "The Multiman", url = "http://158.69.195.195:18404/live.mp3" }
 , { name = "Schizoid Dub Techno", url = "http://schizoid.in:8000/dubtechno" }
 , { name = "Schizoid Progressive", url = "http://schizoid.in:8000/prog" }
