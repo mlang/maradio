@@ -15,6 +15,15 @@ let orf = \(name : Text) -> \(code : Text) ->
 , { name = "Swiss Jazz", url = "http://stream.srg-ssr.ch/m/rsj/mp3_128" }
 , { name = "Ozora Chill", url = "http://stream.radiozora.fm/chill_a" }
 , { name = "Ozora Trance", url = "http://stream.radiozora.fm/trance_a" }
+, { name = "Psychedelik.com Ambient", url = "http://62.210.114.63:8002/stream/1/" }
+, { name = "Psyndora Chill", url = "http://cast.magicstreams.gr:9125/stream" }
+, { name = "Psyradio", url = "http://stream.psyradio.com.ua:8000/256kbps" }
+, { name = "Schizoid PsyTrance", url = "http://schizoid.in:8000/chill" }
+, { name = "Schizoid Chill", url = "http://schizoid.in:8000/chill" }
+, { name = "Schizoid Dub Techno", url = "http://schizoid.in:8000/dubtechno" }
+, { name = "Schizoid Progressive", url = "http://schizoid.in:8000/prog" }
+, { name = "SomaFM", url = "http://ice3.somafm.com/spacestation-128-mp3" }
+, { name = "The Multiman", url = "http://158.69.195.195:18404/live.mp3" }
 , { name = "DNBRadio", url = "http://trace.dnbradio.com:8000/dnbradio_main.mp3" }
 , { name = "DNBRadio Darkstep", url = "http://trace.dnbradio.com:8000/dnbradio_darkstep.mp3" }
 , { name = "Soundportal", url = "http://rs8.stream24.net/radio-soundportal.mp3" }
